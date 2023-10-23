@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Doo</title>
+  </head>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script src="js/scripts.js" defer></script>
+  <body>
+    <div class="to_doo_container">
+      <header>
+        <h1>To doo avançado</h1>
+      </header>
+      <form id="to_doo_form">
+        <p>Adicione a sua tarefa:</p>
+        <div class="form_control">
+          <input
+            type="text"
+            id="to_doo_input"
+            placeholder="O oque você vai fazer?"
+          />
+          <button type="submit">
+            <i class="fa-thin fa-plus"> </i>
+          </button>
+        </div>
+      </form>
+      <form id="edit_form">
+        <p>Edite a sua tarefa:</p>
+        <div class="form_control">
+          <input type="text" id="edit_input" />
+          <button type="submit">
+            <i class="fa-solid fa-check-double"></i>
+          </button>
+        </div>
+        <button id="cancel_edit_btn">Cancelar</button>
+      </form>
+      <div id="toolbar">
+        <div id="search">
+          <h4>Pesquisar:</h4>
+          <form>
+            <input type="text" id="search_input" placeholder="Buscar" />
+            <button id="erase_button">
+              <i class="fa-solid fa-delete-left"></i>
+            </button>
+          </form>
+        </div>
+        <div id="filter">
+          <h4>Filtrar:</h4>
+          <form>
+            <select name="filter" id="filter_select">
+              <option value="all">Todos</option>
+              <option value="done">Feitos</option>
+              <option value="undone">A fazer</option>
+            </select>
+          </form>
+      </div>
+      <div class="to_do_list">
+
+      </div>
+    </div>
+  </body>
+</html>
